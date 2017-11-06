@@ -53,3 +53,13 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
 
 
 <img src="figs/all_avg_fem_per_art_by_yr.png" width="500">
+
+
+
+### Author
+
+Gaurav Sood
+
+### License
+
+Released under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). 
