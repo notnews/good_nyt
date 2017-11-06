@@ -1,4 +1,4 @@
-# Good NYT
+## The Good NYT
 
 The New York Times (NYT) is the nation's newspaper of record. It is both well-regarded and popular. It has won more Pulitzer awards than any other newspaper. And it is the [30th most visited website in the U.S.](https://www.alexa.com/siteinfo/nytimes.com) (as of October, 2017).
 
