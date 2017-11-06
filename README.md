@@ -20,15 +20,19 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
 
 3. **National Vs. International**
     We use the *news.desk* field *Foreign News* to estimate coverage of foreign news. We can also use the *locations* (hand indexed), *online.locations* (algorithmically generated), and *dateline* fields to estimate national vs. international coverage.  
-      - Proportion of Foreign Desk Stories Over Time: [Script](scripts/03_national.R) and [Figure](figs/all_int_by_month.pdf)
+      - Proportion of Foreign Desk Stories Over Time: [Script](scripts/03_national.R) and [Figure](figs/all_int_by_month.pdf).
+
+        <img src="figs/all_int_by_month.png" width="500">
 
 4. **Corrections**  
     We use the *correction.date* and *correction.text* to estimate rate of corrections over time, and what is being corrected (for later).
-      - Proportion of Corrections Per Year: [Script](scripts/04_correction.R) and [Figure](figs/all_cor_by_yr.pdf)
+      - Proportion of Corrections Per Year: [Script](scripts/04_correction.R) and [Figure](figs/all_cor_by_yr.pdf).
 
 5. **Length of Articles**  
     We use the *word.count* field to estimate average length of articles and how it has changed over time.  
       - Article Word Count Over Time: [Script](scripts/05_word_count.R), [Figure: Average Word Count](figs/all_word_lenby_mon.pdf), and [Figure: Median Word Count](figs/all_word_len_median_by_mon.pdf).
+
+        <img src="figs/all_word_len_median_by_mon.png" width="500">
 
 6. **Number of Authors per Article**  
     We use *normalized.byline* to estimate number of authors per article and how that has changed over time.  
@@ -40,10 +44,12 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
 
 8. **Proportion of Wire Stories**  
      Using *byline*.  
-       - [Proportion of AP and Reuters Stories Over Time](figs/all_wire_by_yr.pdf)
+       - Proportion of AP and Reuters Stories Over Time: [Script](scripts/08_wire_stories.R) and [Figure](figs/all_wire_by_yr.pdf)
 
 9. **Race and Gender of Reporters**  
     Using *normalized.byline* and paired with [gender package](https://github.com/ropensci/gender) and [ethnicolr package](https://github.com/appeler/ethnicolr) to impute gender and race of reporters.  
-      - Proportion of Female Journalists on Staff Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_by_yr.pdf)  
-      - Average Number of Female Journalists per Article Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_per_art_by_yr.pdf)
+      - Proportion of Female Journalists on Staff Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_by_yr.pdf).  
+      - Average Number of Female Journalists per Article Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_per_art_by_yr.pdf).
 
+
+<img src="figs/all_avg_fem_per_art_by_yr.png" width="500">
