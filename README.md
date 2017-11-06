@@ -23,9 +23,9 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
 
 3. **National Vs. International**
     We use the *news.desk* field *Foreign News* to estimate coverage of foreign news. We can also use the *locations* (hand indexed), *online.locations* (algorithmically generated), and *dateline* fields to estimate national vs. international coverage.  
-      - Proportion of Foreign Desk Stories Over Time: [Script](scripts/03_national.R) and [Figure](figs/all_int_by_month.pdf).
-
-       <p align = "center"><img src="figs/all_int_by_month.png" width="500"></p>
+      - Proportion of Foreign Desk Stories Over Time: [Script](scripts/03_national.R) and [Figure](figs/all_int_by_month.pdf).  
+      
+      <p align = "center"><img src="figs/all_int_by_month.png" width="500"></p>
 
 4. **Corrections**  
     We use the *correction.date* and *correction.text* to estimate rate of corrections over time, and what is being corrected (later).
