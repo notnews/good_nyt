@@ -14,8 +14,8 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
    We measure kinds of news stories using *news.desk* and *online.section*. (See the script for other ideas for how we can measure the kind of news.)  
 
      - Proportion of Apolitical News Over Time: [Script](scripts/01_apolitical_news.R) and [Figure: Entire Newspaper (Using News Desk)](figs/all_apol_nd_by_month.pdf), [Figure: Section A1 (Using News Desk)](figs/a1_apol_nd_by_month.pdf), and [Figure: Entire Newspaper (Using News Desk and Online Section)](figs/all_apol_3_by_month.pdf)  
-
-<img src="figs/all_apol_nd_by_month.png" width="500">
+     
+     <p align = "center"><img src="figs/all_apol_nd_by_month.png" width="500"></p>
 
 2. **Urban Vs. Rural**  
     We use the *locations* (hand indexed), *online.locations* (algorithmically generated), and *dateline* fields to estimate rural vs. urban coverage within the US.  
@@ -25,7 +25,7 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
     We use the *news.desk* field *Foreign News* to estimate coverage of foreign news. We can also use the *locations* (hand indexed), *online.locations* (algorithmically generated), and *dateline* fields to estimate national vs. international coverage.  
       - Proportion of Foreign Desk Stories Over Time: [Script](scripts/03_national.R) and [Figure](figs/all_int_by_month.pdf).
 
-        <img src="figs/all_int_by_month.png" width="500">
+       <p align = "center"><img src="figs/all_int_by_month.png" width="500"></p>
 
 4. **Corrections**  
     We use the *correction.date* and *correction.text* to estimate rate of corrections over time, and what is being corrected (later).
@@ -52,12 +52,9 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
 9. **Race and Gender of Reporters**  
     We use *normalized.byline* to get the names of the reporters. And we use the [gender package](https://github.com/ropensci/gender) and the [ethnicolr package](https://github.com/appeler/ethnicolr) to impute gender and race of reporters.  
       - Proportion of Female Journalists on Staff Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_by_yr.pdf).  
-      - Average Number of Female Journalists per Article Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_per_art_by_yr.pdf).
-
-
-<img src="figs/all_avg_fem_per_art_by_yr.png" width="500">
-
-
+      - Average Number of Female Journalists per Article Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_per_art_by_yr.pdf).  
+      
+      <p align = "center"><img src="figs/all_avg_fem_per_art_by_yr.png" width="500"></p>
 
 ### Author
 
