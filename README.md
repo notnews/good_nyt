@@ -1,8 +1,8 @@
 # Good NYT
 
-The New York Times (NYT) is nation's newspaper of record. It is well-regarded and it is popular. It has won more Pulitzer awards than any other newspaper. And it is the [30th most visited website in the U.S.](https://www.alexa.com/siteinfo/nytimes.com) (as of October, 2017).
+The New York Times (NYT) is the nation's newspaper of record. It is both well-regarded and popular. It has won more Pulitzer awards than any other newspaper. And it is the [30th most visited website in the U.S.](https://www.alexa.com/siteinfo/nytimes.com) (as of October, 2017).
 
-We explore a few patterns in the NYT using the the annotated [New York Times Corpus](https://catalog.ldc.upenn.edu/ldc2008t19).
+We explore some patterns in production of NYT between 1987 and 2007 using the annotated [New York Times Corpus](https://catalog.ldc.upenn.edu/ldc2008t19).
 
 ### Data Analysis
 
