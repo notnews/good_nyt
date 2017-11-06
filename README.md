@@ -8,8 +8,11 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
 
 0. [Convert NYT Corpus to CSV](https://github.com/soodoku/nytimes-corpus-extractor), and [Recode](scripts/01_nyt_recode.R)  
 
-1. **Apolitical News**  
-   As casual observers have perhaps already noticed, NYT increasingly publishes a lot of stories about topics unrelated to politics, such as cooking, travel, fashion, music, etc. Here we formalize that intuition by tallying the proportion of articles devoted to topics other than politics. We measure apolitical news in a few different ways. Note this is an annotated corpus with labeled data. We try measuring using *news.desk* and *online.section* to which the article was assigned to. We also plan to measure it using *descriptors*.  
+1. **Not News**  
+   Has the proportion of news stories about topics unrelated to politics or the economy, such as, cooking, travel, fashion, music, etc.,  gone up over time? 
+
+   We measure kinds of news stories using *news.desk* and *online.section*. (See the script for other ideas for how we can measure the kind of news.)  
+
      - Proportion of Apolitical News Over Time: [Script](scripts/01_apolitical_news.R) and [Figure: Entire Newspaper (Using News Desk)](figs/all_apol_nd_by_month.pdf), [Figure: Section A1 (Using News Desk)](figs/a1_apol_nd_by_month.pdf), and [Figure: Entire Newspaper (Using News Desk and Online Section)](figs/all_apol_3_by_month.pdf)  
 
 <img src="figs/all_apol_nd_by_month.png" width="500">
@@ -25,7 +28,7 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
         <img src="figs/all_int_by_month.png" width="500">
 
 4. **Corrections**  
-    We use the *correction.date* and *correction.text* to estimate rate of corrections over time, and what is being corrected (for later).
+    We use the *correction.date* and *correction.text* to estimate rate of corrections over time, and what is being corrected (later).
       - Proportion of Corrections Per Year: [Script](scripts/04_correction.R) and [Figure](figs/all_cor_by_yr.pdf).
 
 5. **Length of Articles**  
@@ -47,7 +50,7 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
        - Proportion of AP and Reuters Stories Over Time: [Script](scripts/08_wire_stories.R) and [Figure](figs/all_wire_by_yr.pdf)
 
 9. **Race and Gender of Reporters**  
-    Using *normalized.byline* and paired with [gender package](https://github.com/ropensci/gender) and [ethnicolr package](https://github.com/appeler/ethnicolr) to impute gender and race of reporters.  
+    We use *normalized.byline* to get the names of the reporters. And we use the [gender package](https://github.com/ropensci/gender) and the [ethnicolr package](https://github.com/appeler/ethnicolr) to impute gender and race of reporters.  
       - Proportion of Female Journalists on Staff Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_by_yr.pdf).  
       - Average Number of Female Journalists per Article Over Time: [Script](scripts/09_women.R) and [Figure](figs/all_avg_fem_per_art_by_yr.pdf).
 
