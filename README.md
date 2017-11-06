@@ -35,7 +35,7 @@ We explore a few patterns in the NYT using the the annotated [New York Times Cor
     We use the *word.count* field to estimate average length of articles and how it has changed over time.  
       - Article Word Count Over Time: [Script](scripts/05_word_count.R), [Figure: Average Word Count](figs/all_word_lenby_mon.pdf), and [Figure: Median Word Count](figs/all_word_len_median_by_mon.pdf).
 
-        <img src="figs/all_word_len_median_by_mon.png" width="500">
+        <p align = "center"><img src="figs/all_word_len_median_by_mon.png" width="500"></p>
 
 6. **Number of Authors per Article**  
     We use *normalized.byline* to estimate number of authors per article and how that has changed over time.  
